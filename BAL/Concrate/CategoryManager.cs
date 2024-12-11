@@ -1,4 +1,6 @@
-﻿using DAL.Concrete.Repositories;
+﻿using BAL.Abstarct;
+using DAL.Abstract;
+using DAL.Concrete.Repositories;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,26 +10,22 @@ using System.Threading.Tasks;
 
 namespace BAL.Concrate
 {
-    public class CategoryManager
+    public class CategoryManager : ICategoryService
     {
-        GenericRepository<Category> repo = new GenericRepository<Category>();
-
-        public List<Category> GetAll()
+        ICategoryDal _categoryDal;
+        public CategoryManager(ICategoryDal categoryDal)
         {
-            return repo.GetList();
+            _categoryDal = categoryDal;
         }
 
-        public void CategoryAddBl(Category p)
+        public void CategoryAdd(Category category)
         {
-            if(p.CatagoryName == "" || p.CatagoryName.Length<=3 || p.CatagoryDescriptions == "" || p.CatagoryName.Length>=51)
-            {
-                //hata mesajı
-            }
+            _categoryDal.Insert(category);
+        }
 
-            else
-            {
-                repo.Insert(p);
-            }
+        public List<Category> GetList()
+        {
+            return _categoryDal.GetList();
         }
     }
 }

@@ -10,6 +10,7 @@ namespace DAL.Abstract
 {
     public interface IGenericDal<T>
     {
+        //CRUD
         List<T> GetList();
         void Insert(T p);
         void Update(T p);

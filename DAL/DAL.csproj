@@ -61,6 +61,12 @@
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repositories\CategoryRepository.cs" />
     <Compile Include="Concrete\Repositories\GenericRepository.cs" />
+    <Compile Include="Entitiy\EfAboutDal.cs" />
+    <Compile Include="Entitiy\EfCategoryDal.cs" />
+    <Compile Include="Entitiy\EfContactDal.cs" />
+    <Compile Include="Entitiy\EfContentDal.cs" />
+    <Compile Include="Entitiy\EfHeadingDal.cs" />
+    <Compile Include="Entitiy\EfWriterDal.cs" />
     <Compile Include="Migrations\202411231337570_mig1.cs" />
     <Compile Include="Migrations\202411231337570_mig1.Designer.cs">
       <DependentUpon>202411231337570_mig1.cs</DependentUpon>
