@@ -23,6 +23,21 @@ namespace BAL.Concrate
             _categoryDal.Insert(category);
         }
 
+        public void CategoryDelete(Category c)
+        {
+            _categoryDal.Delete(c);
+        }
+
+        public void CategoryUpdate(Category category)
+        {
+            _categoryDal.Update(category);
+        }
+
+        public Category GetById(int id)
+        {
+            return _categoryDal.Get(x => x.CatagoryID == id);
+        }
+
         public List<Category> GetList()
         {
             return _categoryDal.GetList();

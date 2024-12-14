@@ -139,6 +139,7 @@
     <Compile Include="Controllers\AdminCategoryController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\StaticController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -233,6 +234,7 @@
     <Content Include="AdminLTE-3.0.4\docs\assets\css\alt\adminlte.plugins.min.css" />
     <Content Include="AdminLTE-3.0.4\docs\assets\css\docs.css" />
     <Content Include="AdminLTE-3.0.4\docs\assets\css\highlighter.css" />
+    <Content Include="AdminLTE-3.0.4\docs\assets\css\style.css" />
     <Content Include="AdminLTE-3.0.4\docs\assets\img\AdminLTELogo.png" />
     <Content Include="AdminLTE-3.0.4\docs\assets\img\logo-xl.png" />
     <Content Include="AdminLTE-3.0.4\docs\assets\img\logo-xs.png" />
@@ -2289,6 +2291,9 @@
     <Content Include="Views\Category\AddCategory.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\AdminCategory\Index.cshtml" />
+    <Content Include="Views\AdminCategory\AddCategory.cshtml" />
+    <Content Include="Views\AdminCategory\EditCategory.cshtml" />
+    <Content Include="Views\Static\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
