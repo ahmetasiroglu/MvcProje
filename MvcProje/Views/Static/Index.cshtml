@@ -8,56 +8,63 @@
 <hr>
 <br />
 <br />
-<section>
 
-
-    <div class="card-deck">
-        <div class="card text-white bg-primary mb-4 " style="max-width: 20rem;">
-            <div class="card-header">İSTATİSTİK</div>
-            <div class="card-body">
-                <h5 class="card-title">Toplam Kategori Sayısı</h5>
-                <br />
-                <h5 class="card-text"> @ViewBag.CategoryCount</h5>
+<section class="container mt-4">
+    <div class="row justify-content-center">
+        <!-- Üstteki 3 kutu -->
+        <div class="col-md-4 mb-4">
+            <div class="card text-white bg-primary" style="height: 100%; ">
+                <div class="card-header">İSTATİSTİK</div>
+                <div class="card-body">
+                    <h5 class="card-title">Toplam Kategori Sayısı</h5>
+                    <br />
+                    <h5 class="card-text"> @ViewBag.CategoryCount</h5>
+                </div>
             </div>
         </div>
-        <div class="card text-white bg-secondary mb-4 " style="max-width: 20rem;">
-            <div class="card-header">İSTATİSTİK</div>
-            <div class="card-body">
-                <h5 class="card-title">Yazılım Kategorisi Başlık Sayısı</h5>
-                <br />
-                <h5 class="card-text"> @ViewBag.Heading</h5>
+        <div class="col-md-4 mb-4">
+            <div class="card text-white bg-secondary" style="height: 100%; ">
+                <div class="card-header">İSTATİSTİK</div>
+                <div class="card-body">
+                    <h5 class="card-title">"Yazılım" kategorisine ait başlık sayısı</h5>
+                    <br />
+                    <h5 class="card-text"> @ViewBag.Heading</h5>
+                </div>
             </div>
         </div>
-        <div class="card text-white bg-warning mb-4 " style="max-width: 20rem; ">
-            <div class="card-header">İSTATİSTİK</div>
-            <div class="card-body">
-                <h5 class="card-title">Yazarların İsimlerinde "a" Harfi Bulunanlar</h5>
-                <br />
-                <h5 class="card-text"> @ViewBag.Writer</h5>
-            </div>
-        </div>
-    </div>
-    <div class="card-deck">
-
-
-        <div class="card text-white bg-fuchsia mb-6 " style="max-width: 20rem;">
-            <div class="card-header">İSTATİSTİK</div>
-            <div class="card-body">
-                <h5 class="card-title">En Fazla Başlığı Olan Kategori Adı</h5>
-                <br />
-                <h5 class="card-text"> @ViewBag.HeadingMax</h5>
-            </div>
-        </div>
-        <div class="card text-white bg-primary mb-6 " style="max-width: 20rem; height:auto">
-            <div class="card-header">İSTATİSTİK</div>
-            <div class="card-body">
-                <h5 class="card-title">Kategoriler Tablosunda T/F Farkı </h5>
-                <br />
-                <h5 class="card-text"> @ViewBag.StatusFark</h5>
+        <div class="col-md-4 mb-4">
+            <div class="card text-white bg-warning" style="height: 100%; ">
+                <div class="card-header">İSTATİSTİK</div>
+                <div class="card-body">
+                    <h5 class="card-title">Yazarların İsimlerinde "a" Harfi Bulunanlar</h5>
+                    <br />
+                    <h5 class="card-text"> @ViewBag.Writer</h5>
+                </div>
             </div>
         </div>
     </div>
 
-
+    <div class="row justify-content-center">
+        <!-- Alttaki 2 kutu -->
+        <div class="col-md-6 mb-4">
+            <div class="card text-white bg-fuchsia" style="height: 100%; ">
+                <div class="card-header">İSTATİSTİK</div>
+                <div class="card-body">
+                    <h5 class="card-title">En Fazla Başlığı Olan Kategori Adı</h5>
+                    <br />
+                    <h5 class="card-text"> @ViewBag.HeadingMax</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card text-white bg-primary" style="height: 100%; ">
+                <div class="card-header">İSTATİSTİK</div>
+                <div class="card-body">
+                    <h5 class="card-title">Kategoriler Tablosunda T/F Farkı </h5>
+                    <br />
+                    <h5 class="card-text"> @ViewBag.StatusFark</h5>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
